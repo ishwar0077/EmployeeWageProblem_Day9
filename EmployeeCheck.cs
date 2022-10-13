@@ -8,14 +8,14 @@ namespace EmployeeWageProblem
 {
     public class EmployeeCheck
     {
-        public void EmployeeAttendance()
+        public void CalculateEmpWage()
         {
             const int Is_Full_time = 1;
             const int Is_Part_time = 2;
             const int Emp_Rate_per_hour = 20;
+            const int  Num_Of_Working_days = 20;
+            const int  toatal_Wroking_Hrs = 100;
             //Variables
-            int Num_Of_Working_days = 20;
-            int toatal_Wroking_Hrs = 100;
             int totalWorkingDays = 0;
             int totalHrs = 0;
             int empHrs = 0;
