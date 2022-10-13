@@ -11,20 +11,29 @@ namespace EmployeeWageProblem
         public void EmployeeAttendance()
         {
             int Is_Full_time = 1;
-
+            int Is_Part_time = 2;
+            int Emp_Rate_per_hour = 20;
+            //Variables
+            int empHrs = 0;
+            int empWage = 0;
             Random rand = new Random();
-            int empCheck = rand.Next(2);
-            if (empCheck == 1)
+            int empCheck = rand.Next(3);
+            //Computation
+            if (empCheck == Is_Full_time)
             {
-                Console.WriteLine("Employee is present");
-
+                empHrs = 8;
             }
-
+            else if (empCheck == Is_Part_time)
+            {
+                empHrs = 4;
+            }
             else
             {
-                Console.WriteLine("Employee is absent");
-
+                empHrs = 0;
             }
+            empWage = Emp_Rate_per_hour * empHrs;
+            Console.WriteLine("Employee Wage" + empWage);
+
         }
     }
 }
