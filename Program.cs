@@ -9,7 +9,8 @@ namespace EmplyeeWageProblem
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
             EmployeeCheck emp = new EmployeeCheck();
-            emp.CalculateEmpWage();
+            emp.CalculateEmpWage("Trends",10,13,50);
+            emp.CalculateEmpWage("TCS", 23, 50, 180);
     
         }
     }
